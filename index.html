@@ -30,5 +30,20 @@
         <div class="second-divb">
             <h1>full-stack<br>developer</h1>
         </div>
+    </div>
+    <div class="first-divc">
+        <div class="second-divc">
+            <span id="current-time" style="margin-right: auto; display: inline-flex;"></span>
+            <span class="fourth-divc">GITHUB</span>
+            <span style="margin-left: 1rem;" class="fourth-divc">EMAIL</span>
+        </div>
+    </div>
 </body>
+<script>
+    let time = document.getElementById("current-time");
+    setInterval(() => {
+        let d = new Date();
+        time.innerHTML = d.toLocaleTimeString('en-GB', { hour12: false });
+    }, 1000);
+</script>
 </html>
