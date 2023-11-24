@@ -1,92 +1,69 @@
 body {
     background-color: darkolivegreen;
     color: beige;
+    font-family: Neuemontreal, sans-serif;
 }
 
 h1 {
     text-transform: uppercase;
     font-size: 4.8em;
     line-height: .9;
-    font-family: Neuemontreal, sans-serif;
     font-weight: 400;
 }
 
-.logo-png {
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.primary-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+#primary-container-1 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+#logo-banner {
     width: 100%;
     height: auto;
 }
 
-.first-div {
-    display: flex;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-    width: 100%;
-    justify-content: center;
-}
-
-.first-diva {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-}
-
-.first-divb {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-}
-
-.first-divc {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-}
-
-.second-div {
+.secondary-container {
     display: flex;
     width: 95%;
     max-width: 1400px;
     max-height: 200px;
 }
 
-.second-diva {
-    display: flex;
-    width: 95%;
-    max-width: 1400px;
-    max-height: 200px;
+#secondary-container-2 {
     justify-content: flex-end;
-
+    margin-bottom: 10rem;
 }
 
-.second-divb {
-    display: flex;
-    width: 95%;
-    max-width: 1400px;
-    max-height: 200px;
-    margin-top: 10rem;
-}
-
-.second-divc {
-    display: flex;
-    width: 95%;
-    max-width: 1400px;
-    max-height: 200px;
+#secondary-container-4 {
     justify-content: flex-end;
     margin-top: 3rem;
 }
 
-.third-diva {
+.tertiary-container,
+.footer-social {
     display: inline-flex;
-    font-family: Neuemontreal, sans-serif;
+}
+
+#tertiary-container-2 {
     font-size: 1.2em;
     letter-spacing: .04em;
 }
 
-.fourth-divc {
-    font-family: Neuemontreal, sans-serif;
-    display: inline-flex;
+#footer-social-email {
+    margin-left: 1rem;
 }
 
-#current-time {
-    font-family: Neuemontreal, sans-serif;
+#js-current-time {
+    margin-right: auto;
+    display: inline-flex;
 }
