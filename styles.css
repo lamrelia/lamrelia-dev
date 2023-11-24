@@ -2,6 +2,9 @@ body {
     background-color: darkolivegreen;
     color: beige;
     font-family: Neuemontreal, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
 h1 {
@@ -14,6 +17,15 @@ h1 {
 a {
     color: inherit;
     text-decoration: none;
+}
+
+#js-three-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
 
 .primary-container {
