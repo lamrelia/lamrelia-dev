@@ -1,7 +1,7 @@
 let time = document.getElementById("js-current-time");
 setInterval(() => {
-    let d = new Date();
-    time.innerHTML = d.toLocaleTimeString('en-GB', { hour12: false });
+    let currentDateTime = new Date();
+    time.innerHTML = currentDateTime.toLocaleTimeString('en-GB', { hour12: false });
 }, 1000);
 
 const scene = new THREE.Scene();
@@ -10,9 +10,10 @@ const renderer = new THREE.WebGLRenderer();
 renderer.setSize(window.innerWidth, window.innerHeight);
 document.getElementById('js-three-container').appendChild(renderer.domElement);
 
-const sphereGeometry = new THREE.SphereGeometry(5, 32, 32);
+const sphereGeometry = new THREE.SphereGeometry(4.5, 32, 32);
 const sphereMaterial = new THREE.PointsMaterial({ color: 0xffffff, size: 0.1 });
 const sphere = new THREE.Points(sphereGeometry, sphereMaterial);
+sphere.position.y -= 0.45;
 scene.add(sphere);
 
 const particleGeometry = new THREE.BufferGeometry();
