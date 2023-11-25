@@ -1,5 +1,5 @@
 body {
-    font-family: Neuemontreal, sans-serif;
+    font-family: 'PP Neue Montreal', sans-serif;
     color: white;
     margin: 0;
     padding: 0;
@@ -34,8 +34,8 @@ a {
 }
 
 #primary-container-1 {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 7rem;
 }
 
 #logo-banner {
