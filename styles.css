@@ -1,16 +1,18 @@
-body {
-    font-family: 'PP Neue Montreal', sans-serif;
+html, body {
     color: white;
+    font-family: 'PP Neue Montreal', sans-serif;
+    font-size: clamp(0.9em, 2vw, 1.1em);
     margin: 0;
-    padding: 0;
     overflow: hidden;
+    padding: 0;
 }
 
 h1 {
-    text-transform: uppercase;
-    font-size: 4.8em;
-    line-height: .9;
+    font-size: clamp(2.5em, 5vw, 4.8em);
     font-weight: 400;
+    line-height: .9;
+    text-transform: uppercase;
+    word-wrap: break-word;
 }
 
 a {
@@ -18,63 +20,64 @@ a {
     text-decoration: none;
 }
 
-#js-three-container {
+#three-js {
+    height: 100%;
+    left: 0;
     position: fixed;
     top: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
     z-index: -1;
 }
 
-.primary-container {
+.container {
+    /* border: solid 1px red; */
     display: flex;
-    width: 100%;
-    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
 }
 
-#primary-container-1 {
-    margin-top: 2.5rem;
-    margin-bottom: 7rem;
+#header-container {
+    margin-bottom: 6vh;
+    margin-top: 2vh;    
 }
 
-#logo-banner {
-    width: 100%;
-    height: auto;
+#header-logo {
+    max-width: 100%;
 }
 
-.secondary-container {
-    display: flex;
-    width: 95%;
-    max-width: 1400px;
-    max-height: 200px;
+#header-copyright {
+    margin-bottom: .5vh;
 }
 
-#secondary-container-2 {
-    justify-content: flex-end;
-    margin-bottom: 10rem;
-}
-
-#secondary-container-4 {
-    justify-content: flex-end;
-    margin-top: 3rem;
-}
-
-.tertiary-container,
-.footer-social {
-    display: inline-flex;
-}
-
-#tertiary-container-2 {
+#description-wrapper {
     font-size: 1.2em;
+    justify-content: flex-end;
     letter-spacing: .04em;
 }
 
-#footer-social-email {
-    margin-left: 1rem;
+#heading-wrapper {
+    bottom: 10%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: auto;
 }
 
-#js-current-time {
+#footer-container {
+    bottom: 0%;
+    justify-content: flex-end;
+    left: 0;
+    margin: 0 auto 2vh;
+    position: absolute;
+    right: 0;
+    top: auto;
+}
+
+#current-time-js {
     margin-right: auto;
-    display: inline-flex;
+}
+
+#footer-email-icon {
+    margin-left: 1rem;
 }
