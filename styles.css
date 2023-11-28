@@ -50,10 +50,20 @@ a {
     margin-bottom: .5vh;
 }
 
-#description-wrapper {
+#description-container {
     font-size: 1.2em;
     justify-content: flex-end;
     letter-spacing: .04em;
+}
+
+#description-wrapper {
+    color: #575757;
+    display: flex;
+    flex-direction: column;
+}
+
+#copyright-tag {
+    margin-bottom: .5em;
 }
 
 #heading-wrapper {
